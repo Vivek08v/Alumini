@@ -1,0 +1,209 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #1DA1F2;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.sidebar .nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    padding: 10px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.sidebar .nav ul li a.active,
+.sidebar .nav ul li a:hover {
+    background-color: #1A91DA;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 550px); /* Adjust the width to account for the sidebars */
+    box-sizing: border-box;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top-bar h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.feed {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.post {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.post-header h3 {
+    margin: 0;
+}
+
+.post-header p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.post-content {
+    margin: 15px 0;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    color: #1DA1F2;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.post-actions button:hover {
+    color: #1A91DA;
+}
+
+/* Right Sidebar Styles */
+.right-sidebar {
+    background-color: #f5f8fa;
+    padding: 20px;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.trending, .who-to-follow {
+    margin-bottom: 20px;
+}
+
+.trending h2, .who-to-follow h2 {
+    margin-bottom: 15px;
+}
+
+.trending ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending ul li {
+    margin: 10px 0;
+}
+
+.trending ul li a {
+    text-decoration: none;
+    color: #1DA1F2;
+}
+
+.who-to-follow .follow-suggestion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.follow-suggestion .follow-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.follow-suggestion h3 {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.follow-suggestion button {
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.follow-suggestion button:hover {
+    background-color: #1A91DA;
+}
